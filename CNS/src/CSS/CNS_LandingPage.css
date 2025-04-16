@@ -1,0 +1,261 @@
+:root {
+  --light-bg: #f9fafb;
+  --dark-bg: #1f2937;
+  --light-text: #111827;
+  --dark-text: #f9fafb;
+  --accent: #3b82f6;
+  --accent-dark: #2563eb;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.4s, color 0.4s;
+  user-select: none;
+}
+
+.dark {
+  background-color: #1c1c1c;
+  color: white; 
+}
+
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s;
+}
+
+.dark header {
+  background-color: #111827;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.toggle-btn {
+  background-color: var(--accent);
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: var(--accent-dark);
+}
+
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #cfe8ff, #93c5fd);
+  transition: background 0.5s ease;
+}
+
+.dark .hero {
+  background: linear-gradient(to right, #1e293b, #374151);
+}
+/* .dark body{
+  background-color: #1c1c1c;
+} */
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  background-color: #10b981;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.dashboard,
+.services,
+.feedback {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.dashboard h2,
+.services h2,
+.feedback h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-grid,
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .card {
+  background-color: #1f2937;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0);
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.dark .card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.8);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.feedback-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.dark .feedback-form {
+  background-color: #1f2937;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+.feedback-form button {
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.feedback-form button:hover {
+  background-color: var(--accent-dark);
+  transform: scale(1.05);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.dark footer {
+  background-color: #111827;
+  color: #d1d5db;
+}
