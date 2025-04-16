@@ -4,7 +4,7 @@ import React from 'react';
 import '../CSS/CNS_LandingPage.css'; 
 import { WiSnowflakeCold } from "react-icons/wi";
 
-const CodeverseLandingPage = () => {
+const CNSLandingPage = () => {
   const toggleTheme = () => {
     document.body.classList.toggle('dark');
   };
@@ -27,6 +27,7 @@ const CodeverseLandingPage = () => {
       </header>
 
       <section id="home" className="hero">
+        <span>CNS - CyberNest Solutions</span>
         <h2>Empowering the Next Generation of Coders</h2>
         <p>Training. Projects. Career-Ready Skills.</p>
         <a
@@ -133,7 +134,7 @@ const CodeverseLandingPage = () => {
       </section>
 
       <a
-        href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I'm%20interested%20in%20your%20training"
+        href="https://wa.me/+917903859277?text=Hi!%20I'm%20interested%20in%20your%20training"
         className="whatsapp-float"
       >
         <img
@@ -143,10 +144,10 @@ const CodeverseLandingPage = () => {
       </a>
 
       <footer>
-        <p>&copy; 2025 CodeVerse. All rights reserved.</p>
+        <p>&copy; 2025 WorkHive. All rights reserved.</p>
       </footer>
     </div>
   );
 };
 
-export default CodeverseLandingPage;
+export default CNSLandingPage;

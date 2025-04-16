@@ -18,7 +18,9 @@ html {
   transition: background-color 0.4s, color 0.4s;
   user-select: none;
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 .dark {
   background-color: #1c1c1c;
   color: white; 
@@ -49,14 +51,21 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--accent);
+  /* color: var(--accent); */
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav a {
   margin: 0 20px;
   text-decoration: none;
+  font-size: 1.2rem;
   font-weight: 500;
-  color: inherit;
+  /* color: inherit;   */
+  background: linear-gradient(to bottom, skyblue, #1c1c1c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -117,6 +126,13 @@ nav a:hover::after {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+span{
+  font-size: 3rem;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .cta {
