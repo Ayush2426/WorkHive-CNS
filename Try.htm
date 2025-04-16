@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeVerse - Empowering Future Coders</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script>
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-500">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">CodeVerse</h1>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#dashboard" class="hover:text-blue-600">Dashboard</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <button onclick="toggleTheme()" class="bg-gray-200 dark:bg-gray-700 text-sm px-4 py-1 rounded-full">Toggle Mode</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-20 bg-gradient-to-r from-blue-100 to-blue-300 dark:from-gray-800 dark:to-gray-700" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-4">Empowering the Next Generation of Coders</h2>
+    <p class="text-lg mb-6">Training. Projects. Career-Ready Skills.</p>
+    <a href="https://wa.me/+917903859277?text=Hi!%20I'm%20interested%20in%20your%20training%20program" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full shadow hover:bg-green-600 transition">Chat with Us on WhatsApp</a>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="py-16 container mx-auto px-4" data-aos="zoom-in">
+    <h2 class="text-3xl font-bold mb-6 text-center">Startup Dashboard</h2>
+    <div class="grid md:grid-cols-4 gap-6 text-center">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold">150+</h3>
+        <p>Students Trained</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold">20+</h3>
+        <p>Live Projects</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold">15+</h3>
+        <p>Workshops Conducted</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
+        <h3 class="text-2xl font-semibold">10+</h3>
+        <p>Partner Colleges</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-semibold mb-2">Full Stack Development</h3>
+          <p>End-to-end training with hands-on projects in Java, Spring Boot, MERN, and Flutter.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-semibold mb-2">Cybersecurity Bootcamps</h3>
+          <p>Practical training in network security, ethical hacking, SOC operations, and more.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-semibold mb-2">Industry-based Projects</h3>
+          <p>Real projects from vendors involving student teams for experience and income.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-semibold mb-2">Workshops in Colleges</h3>
+          <p>Organize interactive training in remote areas or government institutions.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-semibold mb-2">Cloud & DevOps Training</h3>
+          <p>CI/CD pipelines, Kubernetes, Docker, AWS essentials, and deployment practices.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-semibold mb-2">Tech for Kids</h3>
+          <p>Beginner courses for school kids on programming, AI, and game development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Form -->
+  <section class="py-16 container mx-auto px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-center">Feedback</h2>
+    <form class="max-w-xl mx-auto bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
+      <input type="text" placeholder="Your Name" class="w-full mb-4 p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700" required>
+      <input type="email" placeholder="Your Email" class="w-full mb-4 p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700" required>
+      <textarea rows="4" placeholder="Your Feedback" class="w-full mb-4 p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Submit Feedback</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/91XXXXXXXXXX?text=Hi!%20I'm%20interested%20in%20your%20training" class="whatsapp-float">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" width="50" height="50">
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-900 py-6 text-center text-gray-600 dark:text-gray-400">
+    <p>&copy; 2025 CodeVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
