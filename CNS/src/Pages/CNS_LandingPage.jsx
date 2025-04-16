@@ -16,11 +16,11 @@ const CNSLandingPage = () => {
           <h1 className="logo">CNS</h1>
           <nav>
             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#dashboard">Dashboard</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about">Dashboard</a>
+            <a href="#dashboard">Services</a>
+            <a href="#services">Blogs</a>
+            <a href="#projects">Contact</a>
+            <a href="#contact">About</a>
           </nav>
           <button onClick={toggleTheme} className="toggle-btn">Theme<WiSnowflakeCold /></button>
         </div>
@@ -31,7 +31,7 @@ const CNSLandingPage = () => {
         <h2>Empowering the Next Generation of Coders</h2>
         <p>Training. Projects. Career-Ready Skills.</p>
         <a
-          href="https://wa.me/+917903859277?text=Hi!%20I'm%20interested%20in%20your%20training%20program"
+          href="https://wa.me/+917903859277?text=Hi!%20I'm%20interested%20in%20your%20training%20program!"
           target="_blank"
           rel="noopener noreferrer"
           className="cta"
@@ -134,7 +134,7 @@ const CNSLandingPage = () => {
       </section>
 
       <a
-        href="https://wa.me/+917903859277?text=Hi!%20I'm%20interested%20in%20your%20training"
+        href="https://wa.me/+917903859277?text=Hi!%20I'm%20interested%20in%20your%20training%20program!"
         className="whatsapp-float"
       >
         <img
